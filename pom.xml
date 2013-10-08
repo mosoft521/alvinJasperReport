@@ -12,6 +12,7 @@
         <module>alvinJasperReport004</module>
         <module>alvinJasperReport005</module>
         <module>alvinJasperReport006</module>
+        <module>alvinJasperReport007</module>
     </modules>
     <packaging>pom</packaging>
 

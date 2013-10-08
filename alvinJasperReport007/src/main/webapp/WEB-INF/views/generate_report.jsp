@@ -13,5 +13,8 @@ Click on the button to generate the report.
 <form name="reportForm2" action="simpleReport2" method="post">
     <input type="submit" name="submitButton" value="Submit"/>
 </form>
+<form name="reportForm3" action="simpleReport3" method="post">
+    <input type="submit" name="submitButton" value="Submit"/>
+</form>
 </body>
 </html>

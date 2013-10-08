@@ -28,6 +28,7 @@
 1. alvinJasperReport001 ==> 1st: spring 2.5.6 + jasperreports 3.1.2
 2. alvinJasperReport002 ==> 2nd: spring 3.2.4.RELEASE + jasperreports 5.2.0
 3. alvinJasperReport003 ==> 3rd: myself Table & sql & WEB-INF/jrxml
-4. alvinJasperReport004 ==> 4rd: resources/jrxml
-5. alvinJasperReport005 ==> 5rd: two jrxml
-6. alvinJasperReport006 ==> 6rd: @Controller & context:component-scan & annotation-driven
+4. alvinJasperReport004 ==> 4th: resources/jrxml
+5. alvinJasperReport005 ==> 5th: two jrxml
+6. alvinJasperReport006 ==> 6th: @Controller & context:component-scan & annotation-driven
+7. alvinJasperReport007 ==> 7th: image
