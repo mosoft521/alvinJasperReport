@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="subReport2" language="groovy" pageWidth="595" pageHeight="842" whenNoDataType="AllSectionsNoDetail" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="f4706038-a50e-48bf-bfea-e242413e00d6">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="id" class="java.lang.String">
+		<fieldDescription><![CDATA[id]]></fieldDescription>
+	</field>
+	<field name="schoolName" class="java.lang.String">
+		<fieldDescription><![CDATA[schoolName]]></fieldDescription>
+	</field>
+	<columnHeader>
+		<band height="22" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="bea9508e-9ccd-40b1-9d85-4df75460b9e8" x="0" y="0" width="277" height="20"/>
+				<textElement>
+					<font fontName="仿宋" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H"/>
+				</textElement>
+				<text><![CDATA[id]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="3b4deec0-3c1b-40b3-93a9-526a7a6fa811" x="277" y="0" width="277" height="20"/>
+				<textElement>
+					<font fontName="仿宋" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H"/>
+				</textElement>
+				<text><![CDATA[schoolName]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<textField>
+				<reportElement uuid="8f42e935-cdc3-4382-95e4-a0715f191886" x="0" y="0" width="277" height="20"/>
+				<textElement>
+					<font fontName="仿宋" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="d1cb2f65-f9eb-4ef5-8423-9d3377e84f99" x="277" y="0" width="277" height="20"/>
+				<textElement>
+					<font fontName="仿宋" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{schoolName}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

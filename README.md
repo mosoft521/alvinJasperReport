@@ -32,3 +32,7 @@
 5. alvinJasperReport005 ==> 5th: two jrxml
 6. alvinJasperReport006 ==> 6th: @Controller & context:component-scan & annotation-driven
 7. alvinJasperReport007 ==> 7th: image
+8. alvinJasperReport008 ==> 8th: subreport use string (use parameter transport SUBREPORT_DIR
+9. alvinJasperReport009 ==> 9th: subreport use parameter (font style not ok!)
+10. alvinJasperReport010 ==> 10th: todo:subreport use servlet
+11. alvinJasperReport011 ==> 11th: todo:subreport use osc-utils

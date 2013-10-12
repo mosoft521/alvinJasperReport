@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="mainReport" pageWidth="595" pageHeight="842" whenNoDataType="AllSectionsNoDetail" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="b121a82e-cd08-4227-8faf-f2ab1e1d5763">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="param_userinfo" class="entity.Userinfo"/>
+	<parameter name="SubReport1" class="net.sf.jasperreports.engine.JasperReport"/>
+	<parameter name="SubReport2" class="net.sf.jasperreports.engine.JasperReport"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<detail>
+		<band height="222" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="cfbc1fdf-44a8-4d5a-b3b9-54934c26e91c" x="2" y="0" width="100" height="20"/>
+				<textElement>
+					<font fontName="仿宋" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[字段1:]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="ac2e62be-f245-47ee-ad03-afa6af91bb6c" x="102" y="0" width="190" height="20"/>
+				<textElement>
+					<font fontName="仿宋" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[""+$P{param_userinfo}.getUsername()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="8d2bae1c-b68a-4366-9eb6-a69f52358526" x="292" y="0" width="100" height="20"/>
+				<textElement>
+					<font fontName="仿宋" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[字段2:]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="9b87dde5-7494-4fe9-a3a4-6dedc2c89b48" x="392" y="0" width="163" height="20"/>
+				<textElement>
+					<font fontName="仿宋" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[""+$P{param_userinfo}.getPassword()]]></textFieldExpression>
+			</textField>
+			<subreport isUsingCache="false">
+				<reportElement uuid="80580e90-9c33-4102-957a-5ce1062bf8fc" x="0" y="20" width="555" height="100"/>
+				<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($P{param_userinfo}.getAddressList())]]></dataSourceExpression>
+				<subreportExpression><![CDATA[$P{SubReport1}]]></subreportExpression>
+			</subreport>
+			<subreport isUsingCache="false">
+				<reportElement uuid="33e74a1e-7797-4f68-82b7-e4c233d30e3d" x="2" y="120" width="553" height="100"/>
+				<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($P{param_userinfo}.getSchoolList())]]></dataSourceExpression>
+				<subreportExpression><![CDATA[$P{SubReport2}]]></subreportExpression>
+			</subreport>
+		</band>
+	</detail>
+</jasperReport>
